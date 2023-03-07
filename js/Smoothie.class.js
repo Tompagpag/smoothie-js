@@ -19,6 +19,7 @@ class Smoothie {
   }
 
   getAcidityPercent() {
+    //.toFixed(2);
     return Math.round((this._acidity / this._volume * 10) * 100) / 100
   }
 
@@ -49,9 +50,9 @@ class Smoothie {
       this._acidity += fruit._acidity;
       this._sugar += fruit._sugar;
 
-      this._color.red = fruit.color.red
-      this._color.blue = fruit.color.blue
-      this._color.green = fruit.color.green
+      // this._color.red = fruit.color.red
+      // this._color.blue = fruit.color.blue
+      // this._color.green = fruit.color.green
       this._color.colorMix(fruit.color);
 
       this.setVitamins(fruit._vitamins);
