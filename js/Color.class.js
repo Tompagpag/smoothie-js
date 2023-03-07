@@ -32,17 +32,14 @@ class Color {
 
 
   colorMix(color) {
-    // console.log("this",this)
-    // console.log("color",color)
     this.red += color.red
     this.green += color.green
     this.blue += color.blue
     this._nbColor++
-
   }
 
   getRgb() { //renvoie la moyenne de tous les RGB qui ont influencés la couleur
-    return "rgb(" + this.red + "," + this.green + "," + this.blue + ")";
+    return "rgb(" + Math.round(this.red) + "," + Math.round(this.green) + "," + Math.round(this.blue) + ")";
   }
 
 
